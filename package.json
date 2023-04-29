@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch styles/index.scss index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alsandre/portfolio.git"
+  },
+  "author": "@Alsandre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alsandre/portfolio/issues"
+  },
+  "homepage": "https://github.com/Alsandre/portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}
