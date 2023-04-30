@@ -1,3 +1,37 @@
+.container {
+  width: 80%;
+  height: 80%;
+  transform: translateY(10%);
+  margin: auto;
+  border: 1px solid #333;
+  background-color: #ddd;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  background-color: #ccc;
+}
+
+.greeting-section {
+  background-color: #eee;
+  width: fit-content;
+  padding: 2rem;
+}
+
+.visitCard {
+  background-color: #222;
+}
+
+.mail-form {
+  margin: 10px;
+  width: 450px;
+  height: 460px;
+  background-color: #fff;
+  border-radius: 9px;
+}
 
 /*# sourceMappingURL=index.css.map */
