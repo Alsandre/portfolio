@@ -8,28 +8,23 @@
   </head>
   <body>
     <div class="mail-form">
+      <div class="header">
+        <span>New Message</span>
         <div>
-            <span>New Message</span>
-            <div>
-                <button id="mailForm-minimize" class="minimize"></button>
-                <button id="mailForm-expand" class="expand"></button>
-                <button id="mailForm-discard" class="close"></button>
-            </div>
+          <button id="mailForm-minimize" class="minimize">-</button>
+          <button id="mailForm-expand" class="expand">&lt;-&gt;</button>
+          <button id="mailForm-discard" class="close">X</button>
         </div>
-      <form method="POST" action="">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+      </div>
+      <form method="POST" action="" class="form">
+          <input type="email" id="email" name="email" required class="email input" placeholder="Your Email"/>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <input type="text" id="subject" name="subject" required class="subject input" placeholder="Subject"/>
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
+          <textarea id="message" name="message" rows="12" required class="textarea"></textarea>
+        <div>
+          <button type="submit">Send</button>
+        </div>
       </form>
     </div>
   </body>

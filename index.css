@@ -27,11 +27,41 @@
 }
 
 .mail-form {
-  margin: 10px;
   width: 450px;
   height: 460px;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
   background-color: #fff;
-  border-radius: 9px;
+  margin: 10px;
+  overflow: hidden;
+}
+.mail-form .header {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+  background-color: #eee;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+.mail-form .form {
+  padding: 0 15px;
+}
+.mail-form .input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4745098039);
+  outline: none;
+}
+.mail-form .textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  line-height: 1.5em;
 }
 
 /*# sourceMappingURL=index.css.map */

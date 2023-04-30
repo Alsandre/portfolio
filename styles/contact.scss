@@ -1,7 +1,38 @@
 .mail-form {
-  margin: 10px;
   width: 450px;
   height: 460px;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
   background-color: #fff;
-  border-radius: 9px;
+  margin: 10px;
+  overflow: hidden;
+  .header {
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    background-color: #eee;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+  }
+  .form {
+    padding: 0 15px;
+  }
+  .input {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    // line-height: 3em;
+    border-bottom: 1px solid #99999979;
+    outline: none;
+  }
+  .textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    line-height: 1.5em;
+  }
 }
