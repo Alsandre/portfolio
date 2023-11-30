@@ -1,8 +1,9 @@
 .container {
-    width: 80%;
-    height: 80%;
-    transform: translateY(10%);
-    margin: auto;
-    border: 1px solid #333;
-    background-color: #ddd;
+  width: 1024px;
+  height: 700px;
+  //   transform: translateY(10%);
+  margin: auto;
+  border: 1px solid #333;
+  background-image: url(/assets/newspaper-template-tr.png);
+  background-size: 100%;
 }

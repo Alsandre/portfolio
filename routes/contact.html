@@ -5,31 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact form</title>
     <link rel="stylesheet" href="../index.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <div class="mail-form">
+      <div class="header">
+        <span>New Message</span>
         <div>
-            <span>New Message</span>
-            <div>
-                <button id="mailForm-minimize" class="minimize"></button>
-                <button id="mailForm-expand" class="expand"></button>
-                <button id="mailForm-discard" class="close"></button>
-            </div>
+          <button id="mailForm-minimize">
+            <img
+              src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/ic_minimize_16px_1x.png"
+              alt="Minimize"
+            />
+          </button>
+          <button id="mailForm-pop-out">
+            <img
+              src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/ic_open_in_full_16px_1x.png"
+              alt=""
+            />
+          </button>
+          <button id="mailForm-close">
+            <img
+              src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/ic_close_16px_1x.png"
+              alt="Close"
+            />
+          </button>
         </div>
-      <form method="POST" action="">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+      </div>
+      <form method="POST" action="" class="form">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="email input"
+          placeholder="Your Email"
+        />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          required
+          class="subject input"
+          placeholder="Subject"
+        />
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
+        <textarea
+          id="message"
+          name="message"
+          rows="12"
+          required
+          class="textarea"
+        ></textarea>
+        <div class="settings">
+          <span class="undo-redo">
+            <button>
+              <img
+                src="https://www.gstatic.com/images/icons/material/system_gm/1x/undo_black_20dp.png"
+                alt="Undo"
+              />
+            </button>
+            <button>
+              <img
+                src="https://www.gstatic.com/images/icons/material/system_gm/1x/redo_black_20dp.png"
+                alt="Redo"
+              />
+            </button>
+          </span>
+          <select name="language" id="mail-form-language">
+            <option value="Sans Serif" selected>Sans Serif</option>
+          </select>
+          <select name="font-size" id="mail-form-font-size">
+            <option value="tT" selected>
+              <span class="mail-form-font-size-thumbnail">tT</span>
+            </option>
+          </select>
+          <button>
+            <img
+              src="https://www.gstatic.com/images/icons/material/system_gm/1x/format_bold_black_20dp.png"
+              alt="Bold"
+            />
+          </button>
+          <button>
+            <img
+              src="https://www.gstatic.com/images/icons/material/system_gm/1x/format_italic_black_20dp.png"
+              alt="Italic"
+            />
+          </button>
+          <button>
+            <img
+              src="https://www.gstatic.com/images/icons/material/system_gm/1x/format_underlined_black_20dp.png"
+              alt="Underline"
+            />
+          </button>
+          <input type="color" class="mail-form-color-picker" />
+        </div>
+        <div>
+          <button type="submit" class="mail-form-send">Send</button>
+          <button>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/format_color_text_baseline_nv700_20dp.png" alt="Formating">
+          </button>
+          <button>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/attach_file_baseline_nv700_20dp.png" alt="Attachment">
+          </button>
+          <button>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/link_baseline_nv700_20dp.png" alt="Link">
+          </button>
+          <button disabled>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mood_baseline_nv700_20dp.png" alt="Emoji">
+          </button>
+          <button disabled>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/drive_baseline_nv700_20dp.png" alt="Drive">
+          </button>
+          <button>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/image_baseline_nv700_20dp.png" alt="Photo">
+          </button>
+          <button disabled>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/lock_clock_baseline_nv700_20dp.png" alt="Confidential mode">
+          </button>
+          <button disabled>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/more_vert_baseline_nv700_20dp.png" alt="More options">
+          </button>
+          <button>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="Discard">
+          </button>
+        </div>
       </form>
     </div>
   </body>

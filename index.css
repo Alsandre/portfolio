@@ -1,10 +1,10 @@
 .container {
-  width: 80%;
-  height: 80%;
-  transform: translateY(10%);
+  width: 1024px;
+  height: 700px;
   margin: auto;
   border: 1px solid #333;
-  background-color: #ddd;
+  background-image: url(/assets/newspaper-template-tr.png);
+  background-size: 100%;
 }
 
 * {
@@ -27,11 +27,72 @@
 }
 
 .mail-form {
-  margin: 10px;
   width: 450px;
   height: 460px;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
   background-color: #fff;
-  border-radius: 9px;
+  margin: 10px;
+  overflow: hidden;
+}
+.mail-form .header {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+  background-color: #eee;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(4, 30, 73, 0.7411764706);
+}
+.mail-form .header button {
+  border: none;
+}
+.mail-form .form {
+  padding: 0 15px;
+}
+.mail-form .input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  border-bottom: 0.5px solid rgba(153, 153, 153, 0.2941176471);
+  outline: none;
+}
+.mail-form .textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  line-height: 1.5em;
+}
+
+.material-icons.md-14 {
+  font-size: 14px;
+}
+
+.mail-form-color-picker {
+  background-image: url(https://www.gstatic.com/images/icons/material/system_gm/1x/text_format_black_20dp.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  top: 1px;
+}
+
+.mail-form-font-size-thumbnail {
+  width: 20px;
+  height: 20px;
+  background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/format_size_black_20dp.png");
+}
+
+.heading {
+  width: 474px;
+  height: 164px;
+  background: rgba(144, 238, 144, 0.445);
+  position: absolute;
+  top: 383px;
+  left: 493px;
+  rotate: 1.9deg;
 }
 
 /*# sourceMappingURL=index.css.map */
