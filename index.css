@@ -1,10 +1,10 @@
 .container {
-  width: 80%;
-  height: 80%;
-  transform: translateY(10%);
+  width: 1024px;
+  height: 700px;
   margin: auto;
   border: 1px solid #333;
-  background-color: #ddd;
+  background-image: url(/assets/newspaper-template-tr.png);
+  background-size: 100%;
 }
 
 * {
@@ -83,6 +83,16 @@
   width: 20px;
   height: 20px;
   background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/format_size_black_20dp.png");
+}
+
+.heading {
+  width: 474px;
+  height: 164px;
+  background: rgba(144, 238, 144, 0.445);
+  position: absolute;
+  top: 383px;
+  left: 493px;
+  rotate: 1.9deg;
 }
 
 /*# sourceMappingURL=index.css.map */
